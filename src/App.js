@@ -10,12 +10,14 @@ import SearchBar from './SearchBar/SearchBar';
 function App() {
   return (
     <div className="App">
+      <header>  
       <h1>Select Your Camp Week Activities!</h1>
       <SearchBar />
-      <header className="App-header">           
+      </header>
+      <body className="App-body">         
         <ActivityList className="container"/>        
         <MyActivities className="container"/>
-      </header>
+      </body>
     </div>
   );
 }
