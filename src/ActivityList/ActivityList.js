@@ -28,9 +28,12 @@ function ActivityList(props) {
     );
     
     return (
+        <div>
+        <h2>Available Camp Activities</h2>
         <ul>
             {sampleActivities}
         </ul>
+        </div>
     )
 };
 
