@@ -24,7 +24,13 @@ const activitiesArray = [
 
 function ActivityList(props) {
     const sampleActivities = activitiesArray.map((activity) =>
-        <li><Activity name={activity.name} location={activity.location} time={activity.time} className={styles.li}/></li>
+        (
+        <div className={styles.li}>
+        <p className={styles.add}>+</p>
+        <li><Activity name={activity.name} location={activity.location} time={activity.time} /></li>
+        
+        </div>
+    )
     );
     
     return (
