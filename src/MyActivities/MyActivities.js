@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Activity from '../Activity/Activity';
 
 function MyActivities() {
     return (
