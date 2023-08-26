@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
-function Activity() {
+function SearchBar() {
     return (
 
     )
 };
 
-export default Activity;
+export default SearchBar;
