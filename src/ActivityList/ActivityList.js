@@ -22,14 +22,13 @@ const activitiesArray = [
 
 
 function ActivityList(props) {
-    const activity1 = activitiesArray[0];
-    const activity2 = activitiesArray[1];
-    const activity3 = activitiesArray[2];
+    const sampleActivities = activitiesArray.map((activity) =>
+        <li><Activity name={activity.name} location={activity.location} time={activity.time}/></li>
+    );
+    
     return (
         <ul>
-            <li><Activity name={activity1.name} location={activity1.location} time={activity1.time}/></li>
-            <li><Activity name={activity2.name} location={activity2.location} time={activity2.time}/></li>
-            <li><Activity name={activity3.name} location={activity3.location} time={activity3.time}/></li>
+            {sampleActivities}
         </ul>
     )
 };
