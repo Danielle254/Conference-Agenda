@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 
-function Activity() {
+
+
+function Activity(props) {
     return (
         <div>
-        <h2>Canoeing</h2>
-        <p>Apple River</p>
-        <p>Tuesday morning</p>
+        <h2>{props.name}</h2>
+        <p>{props.location}</p>
+        <p>{props.time}</p>
         </div>
     )
 };
