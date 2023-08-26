@@ -4,7 +4,7 @@ function MyActivities() {
     return (
         <ul>
             <li>
-                Sample List
+                My Activities
             </li>
         </ul>
     )

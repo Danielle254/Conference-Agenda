@@ -4,7 +4,7 @@ function SearchResults() {
     return (
         <div>
             <ul>
-                <li>Dummy data</li>
+                <li>Search Results</li>
             </ul>
         </div>
     )

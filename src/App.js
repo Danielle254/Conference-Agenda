@@ -12,10 +12,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <ActivityList />
-        <MyActivities />
+      
+        <ActivityList className="container"/>
+        <div className="container">
         <SearchBar />
         <SearchResults />
+        </div>
+        <MyActivities className="container"/>
       </header>
     </div>
   );
