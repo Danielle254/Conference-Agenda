@@ -6,17 +6,20 @@ const activitiesArray = [
     {
         name: "Canoeing",
         location: "Apple River",
-        time: "Tuesday morning"
+        time: "Tuesday morning",
+        id: 1
     },
     {
         name: "Horseback Riding",
         location: "Bayview Stables",
-        time: "Wednesday afternoon"
+        time: "Wednesday afternoon", 
+        id: 3
     },
     {
         name: "Archery",
         location: "City Rec Center",
-        time: "Tuesday afternoon"
+        time: "Tuesday afternoon",
+        id: 2
     }
 ];
 
