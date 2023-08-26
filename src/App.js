@@ -16,7 +16,10 @@ function App() {
       </header>
       <body className="App-body">         
         <ActivityList className="container"/>        
-        <MyActivities className="container"/>
+        <div className="container">
+        <MyActivities/>
+        <button type="button">Email My Activity List</button>
+        </div>
       </body>
     </div>
   );
