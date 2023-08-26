@@ -5,6 +5,7 @@ function SearchBar() {
         <div>
             <label>Search: </label>
             <input type="text"></input>
+            <button type="submit" >GO</button>
         </div>
     )
 };
