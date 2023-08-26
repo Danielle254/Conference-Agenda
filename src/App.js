@@ -11,8 +11,9 @@ import SearchResults from './SearchResults/SearchResults';
 function App() {
   return (
     <div className="App">
+      <h1>Select Your Camp Week Activities!</h1>
       <header className="App-header">
-      
+        
         <ActivityList className="container"/>
         <div className="container">
         <SearchBar />

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Activity from '../Activity/Activity';
+import styles from '../CSSModules/ActivityList.module.css'
 
 const activitiesArray = [
     {
@@ -23,7 +24,7 @@ const activitiesArray = [
 
 function ActivityList(props) {
     const sampleActivities = activitiesArray.map((activity) =>
-        <li><Activity name={activity.name} location={activity.location} time={activity.time}/></li>
+        <li><Activity name={activity.name} location={activity.location} time={activity.time} className={styles.li}/></li>
     );
     
     return (
