@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Activity from '../Activity/Activity';
 import styles from '../CSSModules/ActivityList.module.css'
 
-const activitiesArray = [
+export const activitiesArray = [
     {
         name: "Canoeing",
         location: "Apple River",
