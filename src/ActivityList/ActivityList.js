@@ -26,23 +26,28 @@ const activitiesArray = [
 
 
 function ActivityList(props) {
-    const sampleActivities = activitiesArray.map((activity) =>
+    const [isAdded, setIsAdded] = useState(false);
+    
+    const handleClick = () => {
+        setIsAdded(!isAdded);
+    };
+    
+    const CurrentActivitiesList = activitiesArray.map((activity) =>
         (
         <div className={styles.li}>
-        <button type="button" className={styles.add}>+</button>
-        <li><Activity name={activity.name} location={activity.location} time={activity.time} /></li>
+        <button type="button" className={styles.add} onClick={handleClick}>+</button>
+        <li><Activity name={activity.name} location={activity.location} time={activity.time} isAdded={isAdded}/></li>
         
         </div>
     )
     );
     
     return (
-        <div>
-        <h2>Available Camp Activities</h2>
+        
         <ul>
-            {sampleActivities}
+            {CurrentActivitiesList}
         </ul>
-        </div>
+        
     )
 };
 
