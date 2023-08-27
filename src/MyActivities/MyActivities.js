@@ -50,7 +50,7 @@ function MyActivities(props) {
           
     (
         <div className={styles.li}>
-        <button type="button" className={styles.remove} /* onClick={handleClick} */>+</button>
+        <button type="button" className={styles.remove} /* onClick={handleClick} */>x</button>
         <li><Activity name={activity.name} location={activity.location} time={activity.time} /></li>
         
         </div>
