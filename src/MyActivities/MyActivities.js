@@ -26,7 +26,7 @@ function MyActivities(props) {
         <h2>My Camp Activities</h2>
         <ul>
             <li>
-                <ActivityList isAdded={props.isAdded}/>
+                <ActivityList />
             </li>
         </ul>
         </div>

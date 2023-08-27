@@ -4,7 +4,7 @@ import styles from '../CSSModules/Activity.module.css';
 
 function Activity(props) {
     return (
-        <div>
+        <div >
             <h3  className={styles.activityStyle}>{props.name}</h3>
             <p  className={styles.activityStyle}>{props.location}</p>
             <p  className={styles.activityStyle}>{props.time}</p>
