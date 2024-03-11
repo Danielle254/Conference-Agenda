@@ -1,9 +1,9 @@
 import './App.css';
 import React, { useState } from 'react';
 import data from "./Data"
-import ActivityList from './ActivityList/ActivityList';
+import SearchResults from './SearchResults/SearchResults.js';
 import MyActivities from './MyActivities/MyActivities';
-/* import SearchBar from './SearchBar/SearchBar'; */
+import SearchBar from './SearchBar/SearchBar';
 
 
 function App() {
@@ -17,16 +17,11 @@ function App() {
     <div className="App">
       <header>  
       <h1>Select Your Camp Week Activities!</h1>
-      {/* <SearchBar /> */}
+      <SearchBar />
       </header>
-      <body className="App-body"> 
-        
-               
-        <ActivityList className="container"/>      
-        <div className="container">
-        <MyActivities/>
-        <button type="button">Email My Activity List</button>
-        </div>
+      <body className="App-body">                
+        <SearchResults />            
+        <MyActivities/>         
       </body>
     </div>
   );
