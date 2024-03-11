@@ -1,0 +1,19 @@
+Component Tree
+
+App
+|
+ActivityList 
+|               |
+SearchResults   MyActivities
+|               |
+Activity        Activity
+
+
+
+Comparing to Spotify App Project 
+
+Activity == Track
+ActivityList == Tracklist
+SearchResults == SearchResults
+SearchBar == SearchBar
+MyActivities == Playlist

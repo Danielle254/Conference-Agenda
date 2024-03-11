@@ -1,62 +1,31 @@
 import React, { useState } from 'react';
 import Activity from '../Activity/Activity';
-import styles from '../CSSModules/MyActivities.module.css';
-
-import {activitiesArray} from '../ActivityList/ActivityList';
+import './MyActivities.css';
 
 
-/* function MyActivities(props) {
-    /* const myActivitiesArray = ActivityList.CurrentActivitiesList;
-    const handleClick = () => {
-        setIsAdded(!isAdded);
-    };
-    const MyActivitiesList = myActivitiesArray.map((activity) =>
-    {
-        if (activity.isAdded===true) {    
-    (
-            <div className={styles.li}>
-                <button type="button" className={styles.remove} onClick={handleClick}>x</button>
-                <li><Activity name={activity.name} location={activity.location} time={activity.time} /></li>
-            </div>
-    )}}
-    ); 
-    
-    return (
-        <div>
-        <h2>My Camp Activities</h2>
-        <ul>
-            <li>
-                <ActivityList />
-            </li>
-        </ul>
-        </div>
 
-        
-        );
 
-           
-    
-}; */
 
 
 function MyActivities(props) {
-    /* const [isAdded, setIsAdded] = useState(false);
-    
-    const handleClick = () => {
-        setIsAdded(!isAdded);
-    }; */
+   
     
     const myActivitiesList = activitiesArray.filter((activity) => (activity.isAdded==true)).map((activity) =>
           
     (
         <div className={styles.li}>
-        <button type="button" className={styles.remove} /* onClick={handleClick} */>x</button>
+        <button type="button" className={styles.remove} onClick={handleClick} >x</button>
         <li><Activity name={activity.name} location={activity.location} time={activity.time} /></li>
         
         </div>
     )
         
             );
+
+    const removeActivity = (activityIdToRemove) => {
+        setActivityList((activityList) => 
+        thoughts.filter((thought) => thought.id == thoughtIdToRemove));
+        };
     
     return (
         <div>
