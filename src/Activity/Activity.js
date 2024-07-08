@@ -2,14 +2,20 @@ import React from 'react';
 import './Activity.css';
 
 
-function Activity(props) {
+export default function Activity(props) {
+    const activity = {
+        title: props.title,
+        speaker: props.speaker,
+        time: props.time,
+        displayTime: props.displayTime,
+        id: props.id
+    }
+    
     return (
-        <div>
-            <h3>{props.name}</h3>
-            <p>{props.location}</p>
-            <p>{props.time}</p>
+        <div className="activity">
+            <p className='title'>{props.title}</p>
+            <p className='details'>{props.speaker} | {props.displayTime}</p>
+            <button onClick={() => props.setterFunction(activity)} type='button' className='activity--button'>{props.buttonType}</button>
         </div>
     )
-};
-
-export default Activity;
+}

@@ -5,6 +5,7 @@
   color: white;
   min-height: 100vh;
   text-align: center;
+  
 }
 
 
@@ -15,6 +16,10 @@
 
 .container {
   margin: 20px;
+}
+
+h1 {
+  margin: 0;
 }
 
 
