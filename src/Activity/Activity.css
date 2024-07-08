@@ -10,12 +10,19 @@
     color: black;
 }
 
+p {
+    margin: 0;
+}
+
 .title {
     font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
 }
 
 .details {
     font-style: italic;
+    font-size: 1.25rem;
 }
 
 .activity--button {
@@ -23,5 +30,8 @@
     border-radius: .25rem;
     font-weight: bold;
     color: white;
-    width: 25%;
+    width: 50%;
+    align-self: center;
+    margin: 1rem auto;
+    height: 1.5rem;
 }

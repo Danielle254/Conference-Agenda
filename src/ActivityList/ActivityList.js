@@ -7,7 +7,7 @@ import './ActivityList.css';
 export default function ActivityList(props) {
     const listType = props.listType;
     const list = listType === "agenda" ? props.agenda : props.itinerary
-    const buttonType = listType === "agenda" ? "Add" : "Remove"
+    const buttonType = listType === "agenda" ? "Add to Itinerary" : "Remove"
     const setterFunction = listType === "agenda" ? props.addToList : props.removeFromList
     
     const activities = list.map(

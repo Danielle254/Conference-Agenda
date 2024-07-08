@@ -8,14 +8,16 @@ function MyItinerary(props) {
     
     return (
         <div>
-        <h2>My Itinerary</h2>
-        <ActivityList
-        itinerary={props.itinerary}
-        listType={"myItinerary"}
-        removeFromList={props.removeFromList}
-        />
-        <button type="button">Print My Itinerary</button>
-        <button type="button">Clear</button>
+            <h2>My Itinerary</h2>
+            <ActivityList
+            itinerary={props.itinerary}
+            listType={"myItinerary"}
+            removeFromList={props.removeFromList}
+            />
+            <div className='user--buttons'> 
+                <button className='user--button print--button' type="button">Print My Itinerary</button>
+                <button className='user--button clear--button' type="button">Clear</button>
+            </div>  
         </div>
         
     )

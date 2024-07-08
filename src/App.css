@@ -1,25 +1,28 @@
 
 .App {
   background-color: #1b3d80;
-  font-size: calc(10px + 2vmin);
+  margin: 0 auto;
   color: white;
   min-height: 100vh;
   text-align: center;
+  width: 75%;
   
 }
 
 
 .App-body {
-  display: flex;
-  justify-content: space-evenly;  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem; 
+  margin: 0 2rem;
 }
 
-.container {
-  margin: 20px;
-}
+
 
 h1 {
   margin: 0;
+  font-size: 3rem;
+  padding-top: 2rem;
 }
 
 
