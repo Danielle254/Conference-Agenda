@@ -14,10 +14,11 @@ function MyItinerary(props) {
             listType={"myItinerary"}
             removeFromList={props.removeFromList}
             />
-            <div className='user--buttons'> 
+            {props.itinerary.length > 0 && 
+            <div className='user--buttons'>                
                 <button className='user--button print--button' type="button">Print My Itinerary</button>
-                <button className='user--button clear--button' type="button">Clear</button>
-            </div>  
+                <button className='user--button clear--button' type="button" onClick={props.clear} >Clear</button>
+            </div>}
         </div>
         
     )

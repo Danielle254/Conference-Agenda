@@ -14,12 +14,12 @@ function App() {
     setItineraryData(prevItineraryData => {
       const newItineraryData = []
       const id = activity.id;      
-      if (prevItineraryData.length == 0) {
+      if (prevItineraryData.length === 0) {
         newItineraryData.push(activity)
         return newItineraryData;  
       } else {
         const contains = prevItineraryData.every(
-          item => item.id != id
+          item => item.id !== id
         )
         return contains ? [...prevItineraryData, activity] :  prevItineraryData
       }
@@ -29,10 +29,14 @@ function App() {
   function removeFromList(activity) {
     setItineraryData(prevItineraryData => {      
       const newItineraryData = prevItineraryData.filter(
-          item => item.id != activity.id
+          item => item.id !== activity.id
         )
       return newItineraryData;
     })
+  }
+
+  function clearItinerary() {
+    setItineraryData([]);
   }
    
   
@@ -47,6 +51,7 @@ function App() {
         <MyItinerary
         itinerary={itineraryData}
         removeFromList={removeFromList}
+        clear={clearItinerary}
         />         
       </div>
     </div>
