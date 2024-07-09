@@ -24,6 +24,7 @@ export default function ActivityList(props) {
                 displayTime={activity.displayTime}
                 timeHour={activity.timeHour}
                 timeMinute={activity.timeMinute}
+                location={activity.location}
                 setterFunction={setterFunction}
                 />
             )

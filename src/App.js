@@ -1,8 +1,8 @@
 import './App.css';
 import React, { useState } from 'react';
 import data from "./Data.js"
-import ConferenceAgenda from './ConferenceAgenda/ConferenceAgenda.js';
-import MyItinerary from './MyItinerary/MyItinerary.js';
+import ConferenceAgenda from './components/ConferenceAgenda/ConferenceAgenda.js';
+import MyItinerary from './components/MyItinerary/MyItinerary.js';
 
 
 
@@ -60,7 +60,9 @@ function App() {
   
   return (
     <div className="App">        
-      <h1>Select Your Conference Activities!</h1>      
+      <h1>The Best Ever Women SWE Conference</h1>
+      <p>Minneapolis, Minnesota</p>
+      <p>December 17, 2024</p>  
       <div className="App-body">                
         <ConferenceAgenda 
         agenda={data}

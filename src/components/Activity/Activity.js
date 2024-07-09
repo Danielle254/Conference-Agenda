@@ -9,13 +9,15 @@ export default function Activity(props) {
         timeHour: props.timeHour,
         timeMinute: props.timeMinute,
         displayTime: props.displayTime,
-        id: props.id
+        id: props.id,
+        location: props.location
     }
     
     return (
         <div className="activity">
             <p className='title'>{props.title}</p>
-            <p className='details'>{props.speaker} | {props.displayTime}</p>
+            <p className='details'>{props.speaker}</p> 
+            <p>{props.displayTime} | {props.location}</p>
             <button onClick={() => props.setterFunction(activity)} type='button' className='activity--button'>{props.buttonType}</button>
         </div>
     )

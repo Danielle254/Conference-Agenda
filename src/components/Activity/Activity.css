@@ -23,6 +23,7 @@ p {
 .details {
     font-style: italic;
     font-size: 1.25rem;
+    padding: 0.5rem;
 }
 
 .activity--button {
