@@ -12,6 +12,7 @@ export default function ConferenceAgenda(props) {
             listType="agenda"
             agenda={props.agenda}
             addToList={props.addToList}
+            compareTimes={props.compareTimes}
             />
         </div>
     )

@@ -10,7 +10,9 @@ export default function ActivityList(props) {
     const buttonType = listType === "agenda" ? "Add to Itinerary" : "Remove"
     const setterFunction = listType === "agenda" ? props.addToList : props.removeFromList
     
-    const activities = list.map(
+    
+
+    const activities = list.sort(props.compareTimes).map(
         activity => {
             return (
                 <Activity
@@ -20,6 +22,8 @@ export default function ActivityList(props) {
                 speaker={activity.speaker}
                 buttonType={buttonType}
                 displayTime={activity.displayTime}
+                timeHour={activity.timeHour}
+                timeMinute={activity.timeMinute}
                 setterFunction={setterFunction}
                 />
             )

@@ -6,7 +6,8 @@ export default function Activity(props) {
     const activity = {
         title: props.title,
         speaker: props.speaker,
-        time: props.time,
+        timeHour: props.timeHour,
+        timeMinute: props.timeMinute,
         displayTime: props.displayTime,
         id: props.id
     }

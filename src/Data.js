@@ -22,6 +22,14 @@
     timeMinute: 30,
     displayTime: "2:30pm",
     id: 3 
+    },
+    {
+    title: "Session",
+    speaker: "Bob Ziroll",
+    timeHour: 13,
+    timeMinute: 0,
+    displayTime: "1:00pm",
+    id: 4    
     }
 ];
 
