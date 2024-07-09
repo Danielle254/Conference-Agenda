@@ -1,3 +1,10 @@
+# Custom Conference Agenda
+
+Decide which talks and activities you want to add to your own personal itinerary from the provided conference schedule. Then, print or share your itinerary!
+
+---
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
