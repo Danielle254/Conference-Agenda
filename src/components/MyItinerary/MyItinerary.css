@@ -4,14 +4,15 @@ h2 {
 
 .user--buttons {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .user--button {
-    width: 50%;
+    min-width: 40%;
     margin: 0.5rem auto;
-    height: 2rem;
+    min-height: 3rem;
     border-radius: 0.25rem;
+    font-size: 1.25rem;
 }
 
 .print--button {
@@ -22,4 +23,14 @@ h2 {
 .clear--button {
     background-color: lightgray;
     font-weight: bold;
+}
+
+@media screen and (max-width: 730px) {
+    .user--buttons {
+        flex-direction: column;
+    }
+
+    .user--button {
+        width: 100%;
+    }
 }

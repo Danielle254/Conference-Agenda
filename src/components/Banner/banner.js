@@ -5,7 +5,7 @@ export default function Banner() {
 
     return (
         <div className='banner'>
-            <h1>The Best Ever Women SWE Conference</h1>
+            <h1>Women in Software Engineering Conference</h1>
             <p>December 17, 2024 | Chicago, Illinois</p>            
         </div>
     )

@@ -4,18 +4,35 @@
     background-position: center;
     background-size: cover;
     min-height: 200px;
+    color: white;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
 }
 
+
+.banner h1 {
+    margin: 0;
+    font-size: 3rem;
+    padding: 2rem 1rem;
+}
+
+
 .banner p {
-    padding: 1rem;
+    padding-bottom: 1rem;
     font-size: 1.5rem;
 }
 
-.banner h1 {
-  margin: 0;
-  font-size: 3rem;
-  padding-top: 2rem;
+
+
+@media screen and (max-width: 450px) {
+    .banner h1 {
+        font-size: 2.5rem;
+    }
+
+    .banner p {
+        font-size: 1.25rem;
+    }
 }
+
 
 
 
