@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import data from "./Data.js"
 import ConferenceAgenda from './components/ConferenceAgenda/ConferenceAgenda.js';
 import MyItinerary from './components/MyItinerary/MyItinerary.js';
@@ -9,7 +9,11 @@ import Banner from "./components/Banner/banner.js"
 
 function App() {  
   
-  const [itineraryData, setItineraryData] = useState([]);
+  const [itineraryData, setItineraryData] = useState(JSON.parse(localStorage.getItem("itinerary")) || []);
+
+  useEffect(() => {
+    localStorage.setItem("itinerary", JSON.stringify(itineraryData))
+    }, [itineraryData])
 
   function compareTimes(a, b) {
     const hour1 = a.timeHour;
