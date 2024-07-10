@@ -1,5 +1,6 @@
 h2 {
     font-size: 2rem;
+    padding-bottom: 2rem;
 }
 
 .user--buttons {
@@ -11,8 +12,15 @@ h2 {
     min-width: 40%;
     margin: 0.5rem auto;
     min-height: 3rem;
-    border-radius: 0.25rem;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
     font-size: 1.25rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.user--button:hover {
+    transform: scale(1.05);
 }
 
 .print--button {
@@ -20,9 +28,18 @@ h2 {
     font-weight: bold;
 }
 
+.print--button:hover {
+    background-color: rgb(60, 187, 229);
+}
+
 .clear--button {
     background-color: lightgray;
     font-weight: bold;
+}
+
+.clear--button:hover {
+    background-color: darkgray;
+    
 }
 
 @media screen and (max-width: 730px) {

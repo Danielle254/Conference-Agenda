@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 200px;
+    min-height: 300px;
     color: white;
     box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
 }
@@ -19,6 +19,7 @@
 .banner p {
     padding-bottom: 1rem;
     font-size: 1.5rem;
+    bottom: 1rem;
 }
 
 
