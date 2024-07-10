@@ -8,7 +8,7 @@ Finally, there is the option to print your itinerary, which is formatted for eas
 
 ### How to Access
 
-Visit [https://danielle254.github.io/conference-agenda-simple/](https://danielle254.github.io/conference-agenda-simple/)
+Visit [https://danielle254.github.io/conference-agenda/](https://danielle254.github.io/conference-agenda/)
 
 
 ### Key Features
