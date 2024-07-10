@@ -57,6 +57,22 @@ function App() {
   function clearItinerary() {
     setItineraryData([]);
   }
+
+  function printItinerary() {
+    const fetchItinerary = document.getElementById('itinerary').innerHTML;
+    const areaToPrint = fetchItinerary.replaceAll('<button type="button" class="removeButton">Remove</button>', "<p>_______________</p>");
+    console.log(fetchItinerary);
+    console.log(typeof(fetchItinerary));
+    
+    const a = window.open('', '', 'height=auto, width=500');
+    a.document.write('<html>');
+    a.document.write('<body>');
+    a.document.write(areaToPrint);
+    a.document.write('</body>');
+    a.document.write('</html>');
+    a.document.close();
+    a.print();
+  }
    
   
   return (
@@ -72,6 +88,7 @@ function App() {
         itinerary={itineraryData}
         removeFromList={removeFromList}
         clear={clearItinerary}
+        printItinerary={printItinerary}
         />         
       </div>
     </div>

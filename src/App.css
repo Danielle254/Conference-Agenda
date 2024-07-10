@@ -24,4 +24,10 @@
   }
 }
 
+@media screen and (min-width: 1600px) {
+  .App {
+    width: 1600px;
+  }
+}
+
 

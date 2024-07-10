@@ -18,7 +18,7 @@ export default function Activity(props) {
             <p className='title'>{props.title}</p>
             <p className='details'>{props.speaker}</p> 
             <p>{props.displayTime} | {props.location}</p>
-            <button onClick={() => props.setterFunction(activity)} type='button' className={props.buttonType === "Remove" ? "removeButton" : "addButton"}>{props.buttonType}</button>
+            <button onClick={() => props.setterFunction(activity)} type='button' className={props.buttonType === "Remove" ? 'removeButton' : "addButton"}>{props.buttonType}</button>
         </div>
     )
 }
