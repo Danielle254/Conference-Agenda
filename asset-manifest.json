@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/conference-agenda-simple/static/css/main.8d094173.css",
+    "main.js": "/conference-agenda-simple/static/js/main.6c737a24.js",
+    "static/media/background2_transp.png": "/conference-agenda-simple/static/media/background2_transp.c5cd3acc442fc23907dd.png",
+    "index.html": "/conference-agenda-simple/index.html",
+    "main.8d094173.css.map": "/conference-agenda-simple/static/css/main.8d094173.css.map",
+    "main.6c737a24.js.map": "/conference-agenda-simple/static/js/main.6c737a24.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8d094173.css",
+    "static/js/main.6c737a24.js"
+  ]
+}
