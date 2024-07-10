@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import data from "./Data.js"
 import ConferenceAgenda from './components/ConferenceAgenda/ConferenceAgenda.js';
 import MyItinerary from './components/MyItinerary/MyItinerary.js';
+import Banner from "./components/Banner/banner.js"
 
 
 
@@ -60,9 +61,7 @@ function App() {
   
   return (
     <div className="App">        
-      <h1>The Best Ever Women SWE Conference</h1>
-      <p>Minneapolis, Minnesota</p>
-      <p>December 17, 2024</p>  
+      <Banner /> 
       <div className="App-body">                
         <ConferenceAgenda 
         agenda={data}

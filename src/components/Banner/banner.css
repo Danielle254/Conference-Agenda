@@ -1,0 +1,22 @@
+.banner {
+    background-image: url("./images/background2_transp.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 200px;
+}
+
+.banner p {
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.banner h1 {
+  margin: 0;
+  font-size: 3rem;
+  padding-top: 2rem;
+}
+
+
+
+
