@@ -1,11 +1,54 @@
-# Custom Conference Agenda
+# Conference Agenda - Create Your Own Itinerary
 
-Decide which talks and activities you want to add to your own personal itinerary from the provided conference schedule. Then, print or share your itinerary!
+This is a project of my own idea and design. 
+This is a React project that displays the agenda for a conference in chronological order (data stored in separate file), then allows the user to add activities from the agenda to their own personal itinerary. This is something I wish I had when attending conferences in the past! I'd be circling my preferred talks on a paper printout. This is especially helpful when there are multiple talks occurring at the same time. When adding talks to their itinerary, they sort automatically in chornological order.
+
+Finally, there is the option to print your itinerary, which is formatted for ease of use.
+
+
+### How to Access
+
+Visit [https://danielle254.github.io/conference-agenda-simple/](https://danielle254.github.io/conference-agenda-simple/)
+
+
+### Key Features
+
+* Talks display in chronological order automatically, regardless of order added to itinerary
+* User's itinerary stays put, even if they navigate away or refresh the screen. This makes it easy to come back and make changes as needed without having the build their itinerary from scatch each time.
+* Option to clear the itinerary and start over
+* Ability to print a nicely formatted version of your personal itinerary
+
+
+### Skills Showcased
+
+* React components
+* Use of state, props, hooks, and event handlers
+* Utilizing local storage
+* Sort function that uses the Date object
+* Passing information from parent to child and reverse
+* Responsive website
+* Flex and Grid
+
+
+### Lessons Learned
+
+This project really required me to be organized with my file structure, which in turn kept me organized in the execution.
+I liked learning about local storage and the print function. I can see these being useful in many other applications. 
+I appreciated that my understanding of how to pass functions and attributes to children components really came together through this project. I stepped away from this project for a few months, and when I returned, I was able to read through and understand the code base and how it was functioning. I think this is largely due to having clean, readable code that is well-labeled. 
+
+
+### Future Enhancement Ideas
+
+I'm actually planning another project like this where I create the conference agenda with some sort of library to display it visually in a more calendar-like format. This will make it easier to tell which talks happen at the same time, and even visually distinguish the locations of the talks. 
+I'd also like to add a "share" button in addition to printing.
+Another idea would be to add "add to calendar" options so users could put the talks directly onto their own personal calendar (google, etc). 
+
 
 ---
 
+React boilerplate below
 
-# Getting Started with Create React App
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
