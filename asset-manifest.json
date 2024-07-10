@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/conference-agenda/static/css/main.00d9ea28.css",
-    "main.js": "/conference-agenda/static/js/main.6c737a24.js",
-    "static/media/background2_transp.png": "/conference-agenda/static/media/background2_transp.c5cd3acc442fc23907dd.png",
-    "index.html": "/conference-agenda/index.html",
-    "main.00d9ea28.css.map": "/conference-agenda/static/css/main.00d9ea28.css.map",
-    "main.6c737a24.js.map": "/conference-agenda/static/js/main.6c737a24.js.map"
+    "main.css": "/Conference-Agenda/static/css/main.71f61ccd.css",
+    "main.js": "/Conference-Agenda/static/js/main.6c737a24.js",
+    "static/media/background2_transp.png": "/Conference-Agenda/static/media/background2_transp.c5cd3acc442fc23907dd.png",
+    "index.html": "/Conference-Agenda/index.html",
+    "main.71f61ccd.css.map": "/Conference-Agenda/static/css/main.71f61ccd.css.map",
+    "main.6c737a24.js.map": "/Conference-Agenda/static/js/main.6c737a24.js.map"
   },
   "entrypoints": [
-    "static/css/main.00d9ea28.css",
+    "static/css/main.71f61ccd.css",
     "static/js/main.6c737a24.js"
   ]
 }
