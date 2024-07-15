@@ -9,7 +9,7 @@ import Banner from "./components/Banner/banner.js"
 
 function App() {  
   
-  const [itineraryData, setItineraryData] = useState(JSON.parse(localStorage.getItem("itinerary")) || []);
+  const [itineraryData, setItineraryData] = useState(() => JSON.parse(localStorage.getItem("itinerary")) || []);
 
   useEffect(() => {
     localStorage.setItem("itinerary", JSON.stringify(itineraryData))
